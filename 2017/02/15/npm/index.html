@@ -6,15 +6,24 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>css | 陈玉珠的个人博客</title>
+  <title>npm常用快捷键整理 | 陈玉珠的个人博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="article">
-<meta property="og:title" content="css">
-<meta property="og:url" content="http://yoursite.com/2017/02/07/css/index.html">
+  <meta name="description" content="npm是什么NPM的全称是Node Package Manager，是随同NodeJS一起安装的包管理和分发工具，它很方便让JavaScript开发者下载、安装、上传以及管理已经安装的包。npm install 安装模块
+
+安装包，默认安装最新的版本npm install gulp">
+<meta property="og:type" content="article">
+<meta property="og:title" content="npm常用快捷键整理">
+<meta property="og:url" content="http://yoursite.com/2017/02/15/npm/index.html">
 <meta property="og:site_name" content="陈玉珠的个人博客">
-<meta property="og:updated_time" content="2017-02-13T08:55:46.365Z">
+<meta property="og:description" content="npm是什么NPM的全称是Node Package Manager，是随同NodeJS一起安装的包管理和分发工具，它很方便让JavaScript开发者下载、安装、上传以及管理已经安装的包。npm install 安装模块
+
+安装包，默认安装最新的版本npm install gulp">
+<meta property="og:updated_time" content="2017-02-15T07:39:28.962Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="css">
+<meta name="twitter:title" content="npm常用快捷键整理">
+<meta name="twitter:description" content="npm是什么NPM的全称是Node Package Manager，是随同NodeJS一起安装的包管理和分发工具，它很方便让JavaScript开发者下载、安装、上传以及管理已经安装的包。npm install 安装模块
+
+安装包，默认安装最新的版本npm install gulp">
   
     <link rel="alternative" href="/atom.xml" title="陈玉珠的个人博客" type="application/atom+xml">
   
@@ -166,27 +175,93 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-css" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-npm" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      css
+      npm常用快捷键整理
     </h1>
   
 
         
-        <a href="/2017/02/07/css/" class="archive-article-date">
-  	<time datetime="2017-02-07T02:12:40.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-02-07</time>
+        <a href="/2017/02/15/npm/" class="archive-article-date">
+  	<time datetime="2017-02-15T05:51:26.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-02-15</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <a id="more"></a>
+        <h2>npm是什么</h2><br><p>NPM的全称是Node Package Manager，是随同NodeJS一起安装的包管理和分发工具，它很方便让JavaScript开发者下载、安装、上传以及管理已经安装的包。</p><br><h2>npm install 安装模块</h2>
+
+<p>安装包，默认安装最新的版本<br><blockquote><p>npm install gulp</p>
+</blockquote><br><a id="more"></a><br>安装指定版本<br><blockquote><p>npm install gulp@3.9.1</p>
+</blockquote><br><b>-S, –save 安装包信息将加入到dependencies（生产阶段的依赖）</b><br><blockquote><p>npm install gulp –save 或 npm install gulp -S</p>
+</blockquote><br>package.json 文件的 dependencies 字段：<br><blockquote><p>“dependencies”: {<br>    “gulp”: “^3.9.1”<br>}</p>
+</blockquote><br><b>-D, –save-dev 安装包信息将加入到devDependencies（开发阶段的依赖），所以开发阶段一般使用它</b><br><blockquote><p>npm install gulp –save-dev 或 npm install gulp -D</p>
+</blockquote><br>package.json 文件的 devDependencies字段：<br><blockquote><p>“devDependencies”: {<br>    “gulp”: “^3.9.1”<br>}</p>
+</blockquote><br><b>-O, –save-optional安装包信息将加入到optionalDependencies（可选阶段的依赖）</b><br><blockquote><p>npm install gulp –save-optional 或 npm install gulp -O</p>
+</blockquote><br>package.json 文件的optionalDependencies字段：<br><blockquote><p>“optionalDependencies”: {<br>    “gulp”: “^3.9.1”<br>}</p>
+</blockquote><br><b>-E, –save-exact 精确安装指定模块版本</b><br><blockquote><p>npm install gulp –save-exact 或 npm install gulp -E</p>
+</blockquote><br>输入命令<b>npm install gulp -ES，</b>留意package.json 文件的 dependencies 字段，以看出版本号中的<b>^</b>消失了<br><blockquote><p>“dependencies”: {<br>    “gulp”: “3.9.1”<br>}</p>
+</blockquote><br>模块的依赖都被写入了package.json文件后，他人打开项目的根目录（项目开源、内部团队合作），使用npm install命令可以根据dependencies配置安装所有的依赖包<br><blockquote><p>npm install</p>
+</blockquote><br>本地安装（local）<br><blockquote><p>npm install gulp</p>
+</blockquote><br>全局安装（global）,使用 -g 或 –global<br><blockquote><p>npm install gulp -g</p>
+</blockquote></p>
+<h2>npm uninstall 卸载模块 </h2>
+
+<p>如卸载开发版本的模块<br><blockquote><p>npm uninstall gulp –save-dev</p>
+</blockquote></p>
+<h2>npm update 更新模块</h2>
+
+<p>如卸载开发版本的模块<br><blockquote><p>npm uninstall gulp –save-dev</p>
+</blockquote></p>
+<h2>npm update 更新模块</h2>
+
+<h2>npm ls 查看安装的模块</h2><br>查看全局安装的模块及依赖<br><blockquote><p>npm ls -g </p>
+</blockquote><br><h2>npm init 在项目中引导创建一个package.json文件</h2><br>安装包的信息可保持到项目的package.json文件中，以便后续的其它的项目开发或者他人合作使用，也说package.json在项目中是必不可少的。<br><blockquote><p>npm init [-f|–force|-y|–yes]</p>
+</blockquote><br><h2>npm help 查看某条命令的详细帮助 </h2>
+
+<p>例如输入npm help install，系统在默认的浏览器或者默认的编辑器中打开本地nodejs安装包的文件/nodejs/node_modules/npm/html/doc/cli/npm-install.html<br><blockquote><p>npm help install</p>
+</blockquote></p>
+<h2>npm root 查看包的安装路径</h2><br>输出 node_modules的路径<br><blockquote><p>npm root [-g]</p>
+</blockquote><br><h2>npm config 管理npm的配置路径</h2>
+
+<p>对于config这块用得最多应该是设置代理，解决npm安装一些模块失败的问题<br>例如我在公司内网，因为公司的防火墙原因，无法完成任何模块的安装，这个时候设置代理可以解决<br><blockquote><p>npm config set proxy=<a href="http://dev-proxy.oa.com:8080ll" target="_blank" rel="external">http://dev-proxy.oa.com:8080ll</a></p>
+</blockquote><br>又如国内的网络环境问题，某官方的IP可能被和谐了，幸好国内有好心人，搭建了镜像，此时我们简单设置镜像<br><blockquote><p>npm config set registry=”<a href="http://r.cnpmjs.org" target="_blank" rel="external">http://r.cnpmjs.org</a>“</p>
+</blockquote><br>也可以临时配置，如安装淘宝镜像<br><blockquote><p>npm install -g cnpm –registry=<a href="https://registry.npm.taobao.org" target="_blank" rel="external">https://registry.npm.taobao.org</a></p>
+</blockquote></p>
+<p></p><h2>npm cache管理模块的缓存</h2><br>最常用命令无非清除npm本地缓存<br><blockquote><p>npm cache clean</p>
+</blockquote><p></p>
+<p></p><h2>npm start 启动模块</h2><br>该命令写在package.json文件scripts的start字段中，可以自定义命令来配置一个服务器环境和安装一系列的必要程序，如<br><blockquote><p>“scripts”: {<br>    “start”: “gulp -ws”<br>}</p>
+</blockquote><br>此时在cmd中输入npm start命令相当于执行gulpfile.js文件自定义的watch和server命令。<p></p>
+<p>如果package.json文件没有设置start，则将直接启动node server.js</p>
+<p></p><h2>npm stop 停止模块</h2><br>基础语法<br><blockquote><p>npm stop <code>[-- &lt;args&gt;]</code></p>
+</blockquote><p></p>
+<p></p><h2>npm restart 重新启动模块</h2><br>基础语法<br><blockquote><p>npm restart <code>[-- &lt;args&gt;]</code></p>
+</blockquote><p></p>
+<p></p><h2>npm test 测试模块</h2><br>基础语法<br><blockquote><p>npm test <code>[-- &lt;args&gt;]</code><br>npm tst <code>[-- &lt;args&gt;]</code></p>
+</blockquote><br>该命令写在package.json文件scripts的test字段中，可以自定义该命令来执行一些操作，如<br><blockquote><p>“scripts”: {<br>    “test”: “gulp release”<br>},</p>
+</blockquote><br>此时在cmd中输入npm test命令相当于执行gulpfile.js文件自定义的release命令。<p></p>
+<p></p><h2>npm version 查看模块版本s</h2><br>查看模块的版本<br><blockquote><p>npm version</p>
+</blockquote><p></p>
+<p></p><h2>npm view 查看模块的注册信息</h2><br>查看模块的依赖关系<br><blockquote><p>npm view gulp dependencies</p>
+</blockquote><br>查看模块的源文件地址<br><blockquote><p>npm view gulp repository.url</p>
+</blockquote><br>查看模块的贡献者，包含邮箱地址<br><blockquote><p>npm view npm contributors</p>
+</blockquote><p></p>
+<p></p><h2>npm adduser 用户登录</h2><br>基础语法<br><blockquote><p>npm adduser [–registry=url] <code>[--scope=@orgname]</code>[–always-auth]</p>
+</blockquote><br>发布模板到npm社区前需要先登录，然后再进入发布的操作<p></p>
+<p></p><h2>npm publish 发布模块</h2><br>基础语法<br><blockquote><p>npm publish <code>[&lt;tarball&gt;|&lt;folder&gt;] [--tag &lt;tag&gt;] [--access &lt;public|restricted&gt;]</code></p>
+<p>Publishes ‘.’ if no argument supplied<br>Sets tag ‘latest’ if no –tag specified</p>
+</blockquote><p></p>
+<p></p><h2>npm access 在发布的包上设置访问级别</h2><br><blockquote><p>npm access public [<package>]<br>npm access restricted [<package>]</package></package></p>
+<p>npm access grant <read-only|read-write> <scope:team> [<package>]<br>npm access revoke <scope:team> [<package>]</package></scope:team></package></scope:team></read-only|read-write></p>
+<p>npm access ls-packages [<user>|<scope>|<scope:team>]<br>npm access ls-collaborators [<package> [<user>]]<br>npm access edit [<package>]</package></user></package></scope:team></scope></user></p>
+</blockquote><p></p>
+
       
 
       
@@ -298,7 +373,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="http://s.jiathis.com/qrcode.php?url=http://yoursite.com/2017/02/07/css/" alt="微信分享二维码">
+      <img src="http://s.jiathis.com/qrcode.php?url=http://yoursite.com/2017/02/15/npm/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -312,18 +387,9 @@
   
 <nav id="article-nav">
   
-    <a href="/2017/02/07/hexo-github/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          Hexo+Github，搭建属于自己的博客
-        
-      </div>
-    </a>
   
-  
-    <a href="/2017/02/06/git/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">git常用命令整理</div>
+    <a href="/2017/02/13/vue/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">vue使用笔记</div>
       <i class="icon-circle-right"></i>
     </a>
   
